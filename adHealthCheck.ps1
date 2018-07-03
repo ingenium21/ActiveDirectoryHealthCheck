@@ -7,10 +7,10 @@ if((test-path $reportpath) -like $false)
 {
 new-item $reportpath -type file
 }
-$smtphost = "192.168.100.65" 
-$from = "aspireadmin@gentrylocke.com" 
+$smtphost = {{SMTP_HOST}} 
+$from = "{{SENDER_EMAIL}}" 
 $emailSubject = "AD Health Status for GEY"
-$email1 = "renato.regalado@mindshift.com","josh.quinn@mindshift.com","casey.ferguson@mindshift.com","timothy.benz@mindshift.com","lis.mote@mindshift.com"
+$email1 = "{{RECEIVER_EMAIL(S)}}"
 $timeout = "60"
 
 ###############################HTml Report Content############################

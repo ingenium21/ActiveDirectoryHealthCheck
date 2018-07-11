@@ -9,7 +9,7 @@ new-item $reportpath -type file
 }
 $smtphost = "{{SMTP_HOST}}" #needs to be a string make sure to place between quotes
 $from = "{{SENDER_EMAIL}}"  #needs to be a string make sure to place between quotes
-$emailSubject = "AD Health Status for GEY"
+$emailSubject = "AD Health Status for XYZ"
 $email1 = "{{RECEIVER_EMAIL(S)}}"  #needs to be a string make sure to place between quotes
 $timeout = "60"
 
